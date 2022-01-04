@@ -126,7 +126,7 @@ const strTpl = `
 			errors = append(errors, err)
 		}
 	{{ else if $r.GetIpWithPrefixlen }}
-		if ip, net, err := net.ParseCIDR({{ accessor . }}); err != nil  {
+		if _, _, err := net.ParseCIDR({{ accessor . }}); err != nil  {
 			err := {{ err . "value must be a valid IP address with prefixlen" }}
 			if !all { return err }
 			errors = append(errors, err)
@@ -144,7 +144,7 @@ const strTpl = `
 			errors = append(errors, err)
 		}
 	{{ else if $r.GetIpv4WithPrefixlen }}
-		if ip, net, err := net.ParseCIDR({{ accessor . }}); err != nil || ip.To4() == nil {
+		if ip, _, err := net.ParseCIDR({{ accessor . }}); err != nil || ip.To4() == nil {
 			err := {{ err . "value must be a valid IPv4 address with prefixlen" }}
 			if !all { return err }
 			errors = append(errors, err)
@@ -162,7 +162,7 @@ const strTpl = `
 			errors = append(errors, err)
 		}
 	{{ else if $r.GetIpv4WithPrefixlen }}
-		if ip, net, err := net.ParseCIDR({{ accessor . }}); err != nil || ip.To6() == nil {
+		if ip, _, err := net.ParseCIDR({{ accessor . }}); err != nil || ip.To6() == nil {
 			err := {{ err . "value must be a valid IPv6 address with prefixlen" }}
 			if !all { return err }
 			errors = append(errors, err)
