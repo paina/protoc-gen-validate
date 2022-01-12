@@ -579,12 +579,30 @@ message StringRules {
         // Valid IPv6 addresses should not include surrounding square brackets.
         bool ip       = 14;
 
+        // TODO: comment
+        bool ip_prefix = 27;
+
+        // TODO: comment
+        bool ip_with_prefixlen = 28;
+
         // Ipv4 specifies that the field must be a valid IPv4 address.
         bool ipv4     = 15;
+
+        // TODO: comment
+        bool ipv4_prefix = 29;
+
+        // TODO: comment
+        bool ipv4_with_prefixlen = 30;
 
         // Ipv6 specifies that the field must be a valid IPv6 address. Valid
         // IPv6 addresses should not include surrounding square brackets.
         bool ipv6     = 16;
+
+        // TODO: comment
+        bool ipv6_prefix = 31;
+
+        // TODO: comment
+        bool ipv6_with_prefixlen = 32;
 
         // Uri specifies that the field must be a valid, absolute URI as defined
         // by RFC 3986
