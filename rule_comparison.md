@@ -38,8 +38,8 @@
 | ip_with_prefixlen      |✅|✅|❌|❌|❌|
 | ipv4_with_prefixlen    |✅|✅|❌|❌|❌|
 | ipv6_with_prefixlen    |✅|✅|❌|❌|❌|
-| uri                    |✅|✅|✅|✅|✅|
-| uri_ref                |✅|✅|✅|✅|✅|
+| uri                    |✅|✅|❌|✅|✅|
+| uri_ref                |✅|✅|❌|✅|✅|
 | uuid                   |✅|✅|✅|✅|✅|
 | well_known_regex       |✅|✅|✅|✅|✅|
 
