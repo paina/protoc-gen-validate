@@ -32,8 +32,14 @@
 | ip                     |✅|✅|✅|✅|✅|
 | ipv4                   |✅|✅|✅|✅|✅|
 | ipv6                   |✅|✅|✅|✅|✅|
-| uri                    |✅|✅|❌|✅|✅|
-| uri_ref                |✅|✅|❌|✅|✅|
+| ip_prefix              |✅|✅|❌|❌|❌|
+| ipv4_prefix            |✅|✅|❌|❌|❌|
+| ipv6_prefix            |✅|✅|❌|❌|❌|
+| ip_with_prefixlen      |✅|✅|❌|❌|❌|
+| ipv4_with_prefixlen    |✅|✅|❌|❌|❌|
+| ipv6_with_prefixlen    |✅|✅|❌|❌|❌|
+| uri                    |✅|✅|❌|❌|❌|
+| uri_ref                |✅|✅|❌|❌|❌|
 | uuid                   |✅|✅|✅|✅|✅|
 | well_known_regex       |✅|✅|✅|✅|✅|
 
