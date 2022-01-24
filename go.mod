@@ -3,7 +3,7 @@ module github.com/paina/protoc-gen-validate
 go 1.17
 
 require (
-	github.com/envoyproxy/protoc-gen-validate v0.6.3
+	github.com/paina/protoc-gen-validate v0.6.3
 	github.com/iancoleman/strcase v0.2.0
 	github.com/lyft/protoc-gen-star v0.6.0
 	golang.org/x/lint v0.0.0-20210508222113-6edffad5e616
