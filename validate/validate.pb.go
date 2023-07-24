@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.27.1
 // 	protoc        v3.17.3
-// source: validate/validate.proto
+// source: validate/validate_paina.proto
 
 package validate
 
@@ -3300,7 +3300,7 @@ var file_validate_validate_proto_extTypes = []protoimpl.ExtensionInfo{
 		Field:         1071,
 		Name:          "validate.disabled",
 		Tag:           "varint,1071,opt,name=disabled",
-		Filename:      "validate/validate.proto",
+		Filename:      "validate/validate_paina.proto",
 	},
 	{
 		ExtendedType:  (*descriptorpb.MessageOptions)(nil),
@@ -3308,7 +3308,7 @@ var file_validate_validate_proto_extTypes = []protoimpl.ExtensionInfo{
 		Field:         1072,
 		Name:          "validate.ignored",
 		Tag:           "varint,1072,opt,name=ignored",
-		Filename:      "validate/validate.proto",
+		Filename:      "validate/validate_paina.proto",
 	},
 	{
 		ExtendedType:  (*descriptorpb.OneofOptions)(nil),
@@ -3316,7 +3316,7 @@ var file_validate_validate_proto_extTypes = []protoimpl.ExtensionInfo{
 		Field:         1071,
 		Name:          "validate.required",
 		Tag:           "varint,1071,opt,name=required",
-		Filename:      "validate/validate.proto",
+		Filename:      "validate/validate_paina.proto",
 	},
 	{
 		ExtendedType:  (*descriptorpb.FieldOptions)(nil),
@@ -3324,7 +3324,7 @@ var file_validate_validate_proto_extTypes = []protoimpl.ExtensionInfo{
 		Field:         1071,
 		Name:          "validate.rules",
 		Tag:           "bytes,1071,opt,name=rules",
-		Filename:      "validate/validate.proto",
+		Filename:      "validate/validate_paina.proto",
 	},
 }
 
