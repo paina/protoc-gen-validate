@@ -12,7 +12,7 @@ package(
 
 proto_library(
     name = "validate_proto",
-    srcs = ["validate.proto"],
+    srcs = ["validate_paina.proto"],
     deps = [
         "@com_google_protobuf//:descriptor_proto",
         "@com_google_protobuf//:duration_proto",
@@ -27,7 +27,7 @@ cc_proto_library(
 
 py_proto_library(
     name = "validate_py",
-    srcs = ["validate.proto"],
+    srcs = ["validate_paina.proto"],
     deps = ["@com_google_protobuf//:protobuf_python"],
 )
 

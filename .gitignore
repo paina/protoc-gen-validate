@@ -6,7 +6,7 @@ bazel-*
 /protoc-gen-validate
 
 /python/LICENSE
-/python/validate.proto
+/python/validate_paina.proto
 /python/dist/
 *.egg-info/
 __pycache__/

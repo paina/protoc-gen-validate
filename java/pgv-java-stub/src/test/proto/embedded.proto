@@ -4,7 +4,7 @@ package io.envoyproxy.pvg.cases;
 
 option java_multiple_files = true;
 
-import "validate/validate.proto";
+import "validate/validate_paina.proto";
 
 message TokenUse {
     message Payload {

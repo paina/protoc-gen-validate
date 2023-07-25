@@ -4,7 +4,7 @@ package tests.harness.cases;
 option go_package = "github.com/paina/protoc-gen-validate/tests/harness/cases/go;cases";
 import "tests/harness/cases/other_package/embed.proto";
 
-import "validate/validate.proto";
+import "validate/validate_paina.proto";
 
 message TestMsg {
     string  const  = 1 [(validate.rules).string.const = "foo"];

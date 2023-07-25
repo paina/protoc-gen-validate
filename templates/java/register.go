@@ -8,10 +8,10 @@ import (
 	"text/template"
 	"unicode"
 
-	"github.com/paina/protoc-gen-validate/templates/shared"
 	"github.com/iancoleman/strcase"
 	pgs "github.com/lyft/protoc-gen-star"
 	pgsgo "github.com/lyft/protoc-gen-star/lang/go"
+	"github.com/paina/protoc-gen-validate/templates/shared"
 	"google.golang.org/protobuf/types/known/durationpb"
 	"google.golang.org/protobuf/types/known/timestamppb"
 )
@@ -138,7 +138,7 @@ func JavaMultiFilePath(f pgs.File, m pgs.Message) pgs.FilePath {
 
 func importsPvg(f pgs.File) bool {
 	for _, dep := range f.Descriptor().Dependency {
-		if strings.HasSuffix(dep, "validate.proto") {
+		if strings.HasSuffix(dep, "validate_paina.proto") {
 			return true
 		}
 	}

@@ -3,7 +3,7 @@ space := $(empty) $(empty)
 PACKAGE := github.com/paina/protoc-gen-validate
 
 # protoc-gen-go parameters for properly generating the import path for PGV
-VALIDATE_IMPORT := Mvalidate/validate.proto=${PACKAGE}/validate
+VALIDATE_IMPORT := Mvalidate/validate_paina.proto=${PACKAGE}/validate
 GO_IMPORT_SPACES := ${VALIDATE_IMPORT},\
 	Mgoogle/protobuf/any.proto=google.golang.org/protobuf/types/known/anypb,\
 	Mgoogle/protobuf/duration.proto=google.golang.org/protobuf/types/known/durationpb,\
@@ -104,11 +104,11 @@ testcases: bin/protoc-gen-go ## generate the test harness case protos
 		--validate_out="module=${PACKAGE}/tests/harness/cases/go,lang=go,Mtests/harness/cases/other_package/embed.proto=${PACKAGE}/tests/harness/cases/other_package/go,Mtests/harness/cases/yet_another_package/embed.proto=${PACKAGE}/tests/harness/cases/yet_another_package/go:./go" \
 		./*.proto
 
-validate/validate.pb.go: bin/protoc-gen-go validate/validate.proto
+validate/validate.pb.go: bin/protoc-gen-go validate/validate_paina.proto
 	protoc -I . \
 		--plugin=protoc-gen-go=${GOPATH}/bin/protoc-gen-go \
 		--go_opt=paths=source_relative \
-		--go_out="${GO_IMPORT}:." validate/validate.proto
+		--go_out="${GO_IMPORT}:." validate/validate_paina.proto
 
 tests/harness/go/harness.pb.go: bin/protoc-gen-go tests/harness/harness.proto
 	# generates the test harness protos
@@ -133,7 +133,7 @@ tests/harness/java/java-harness:
 
 .PHONY: prepare-python-release
 prepare-python-release:
-	cp validate/validate.proto python/
+	cp validate/validate_paina.proto python/
 	cp LICENSE python/
 
 .PHONY: python-release

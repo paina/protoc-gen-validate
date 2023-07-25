@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package pgv.example.foo;
 
-import "validate/validate.proto";
+import "validate/validate_paina.proto";
 
 message BarNone {
   int32 value = 1;

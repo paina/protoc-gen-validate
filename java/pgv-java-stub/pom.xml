@@ -52,7 +52,7 @@
             <resource>
                 <directory>../..</directory>
                 <includes>
-                    <include>validate/validate.proto</include>
+                    <include>validate/validate_paina.proto</include>
                 </includes>
             </resource>
         </resources>
@@ -72,7 +72,7 @@
                 <version>${protobuf.maven.plugin.version}</version>
                 <configuration>
                     <!--
-                     ~ Embed generated validate.proto classes for all Protobuf 3.x versions. This is safe because
+                     ~ Embed generated validate_paina.proto classes for all Protobuf 3.x versions. This is safe because
                      ~ Protobuf guarantees API stability for all 3.x version.
                      ~ https://github.com/protocolbuffers/protobuf/blob/17cc42a45aeab0f78a137fa6be6c36095db32e58/CHANGES.txt#L107-L122
                     -->
