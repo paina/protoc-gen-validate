@@ -39,9 +39,9 @@ def pgv_dependencies(maven_repos = _DEFAULT_REPOSITORIES):
         http_archive(
             name = "zlib",
             build_file = "@com_google_protobuf//:third_party/zlib.BUILD",
-            sha256 = "c3e5e9fdd5004dcb542feda5ee4f0ff0744628baf8ed2dd5d66f8ca1197cb1a1",
-            strip_prefix = "zlib-1.2.11",
-            urls = ["https://zlib.net/zlib-1.2.11.tar.gz"],
+            sha256 = "b3a24de97a8fdbc835b9833169501030b8977031bcb54b3b3ac13740f846ab30",
+            strip_prefix = "zlib-1.2.13",
+            urls = ["https://www.zlib.net/zlib-1.2.13.tar.gz"],
         )
 
     if not native.existing_rule("bazel_skylib"):
